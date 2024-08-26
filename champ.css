@@ -1,4 +1,17 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+h1 {
+  font-size: 60px;
+  font-family: "Bebas Neue";
+  text-align: center;
+  color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+}
+h2 {
+  font-size: 40px;
+  font-family: "Bebas Neue";
+  text-align: center;
+  color: rgb(255, 255, 255);
+}
 body {
   margin: 0;
 }
@@ -20,15 +33,10 @@ header {
   z-index: -1;
 }
 
-.background {
-  transform: translateZ(-10px) scale(2);
-}
-
 .foreground {
   transform: translateZ(-5px) scale(1.5);
 }
 
-.background,
 .foreground {
   position: absolute;
   height: 100%;
@@ -40,7 +48,9 @@ header {
 .title {
   font-size: 7rem;
   color: white;
-  text-shadow: 0 0 5px black;;
+  text-shadow: 0 0 5px black;
+  font-family: "Bebas Neue";
+  text-align: center;
 }
 
 section {
@@ -48,14 +58,4 @@ section {
   padding: 2rem;
   background-color: #333;
   color: white;
-}
-li {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: "Bedas Neue";
-}
-h1 {
-  font-family: "Bedas Neue";
-  
 }
