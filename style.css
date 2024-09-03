@@ -1,63 +1,97 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
-body {
+
+html, body {
   margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Bebas Neue";
+  overflow-x: hidden;
 }
 
 .wrapper {
+  perspective: 1px;
   height: 100vh;
   overflow-y: auto;
   overflow-x: hidden;
-  perspective: 10px;
+  scroll-behavior: smooth;
 }
 
-header {
+.parallax-section {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-  transform-style: preserve-3d;
-  z-index: -1;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
 }
 
-.background {
-  transform: translateZ(-10px) scale(2);
+#section1 {
+  background-image: url('imgs/F1logo.jpg');
+}
+
+#section2 {
+  background-image: url('imgs/1578641118.avif');
 }
 
 .foreground {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.background,
-.foreground {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  z-index: 1;
 }
 
 .title {
   font-size: 7rem;
   color: white;
-  text-shadow: 0 0 5px black;;
+  text-shadow: 0 0 5px black;
 }
 
-section {
-  font-size: 2rem;
+.content-section {
   padding: 2rem;
-  background-color: #333;
+  background-color: #A72224;
+  color: white;
+  font-size: 2rem;
+  position: relative;
+  z-index: 2;
+}
+
+.links-list {
+  list-style-type: none;
+  padding: 0;
+  text-align: center;
+}
+
+.links-list li {
+  display: inline-block;
+  margin: 20px;
+}
+
+.links-list a {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  background-color: #29373f;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.links-list a:hover {
+  background-color: #ff4c4c;
   color: white;
 }
-li {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-family: "Bedas Neue";
-}
-h1 {
-  font-family: "Bedas Neue";
-  font-size: 45px;
-  font-weight: bold;
 
+.final-section {
+  background-color: #29373f;
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+footer {
+  background-color: #29373f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }

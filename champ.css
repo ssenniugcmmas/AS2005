@@ -1,61 +1,191 @@
 @import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
-h1 {
-  font-size: 60px;
-  font-family: "Bebas Neue";
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #29373f;
+  color: white;
+  z-index: 1000; 
+  padding: 1rem 0;
   text-align: center;
-  color: rgb(255, 255, 255);
-  margin-bottom: 10px;
-}
-h2 {
-  font-size: 40px;
-  font-family: "Bebas Neue";
-  text-align: center;
-  color: rgb(255, 255, 255);
-}
-body {
-  margin: 0;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
 }
 
-.wrapper {
-  height: 100vh;
-  overflow-y: auto;
-  overflow-x: hidden;
-  perspective: 10px;
-}
-
-header {
-  position: relative;
+.nav-container {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #4b5258;
+  border-radius: 5px;
+}
+
+
+body {
+  padding-top: 70px; 
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
   height: 100%;
-  transform-style: preserve-3d;
-  z-index: -1;
+  font-family: "Bebas Neue";
+  overflow-x: hidden;
+}
+
+.wrapper {
+  perspective: 1px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+.parallax-section {
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+
+#intro {
+  background-image: url('imgs/Champion.jpg'); 
+}
+
+
+#redbull {
+  background-image: url('imgs/Redbull.jpg'); 
+}
+
+
+#mercedes {
+  background-image: url('imgs/Mercedes.jpg'); 
+}
+
+
+#ferrari {
+  background-image: url('imgs/Ferrari.jpg'); 
+}
+
+
+#mclaren {
+  background-image: url('imgs/Mclaren.jpg'); 
 }
 
 .foreground {
-  transform: translateZ(-5px) scale(1.5);
-}
-
-.foreground {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  object-fit: cover;
-  z-index: -1;
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  z-index: 1;
 }
 
 .title {
   font-size: 7rem;
   color: white;
   text-shadow: 0 0 5px black;
-  font-family: "Bebas Neue";
+}
+
+
+.content-section {
+  padding: 2rem;
+  background-color: #A72224; 
+  color: white;
+  font-size: 2rem;
   text-align: center;
 }
 
-section {
-  font-size: 2rem;
-  padding: 2rem;
-  background-color: #333;
+
+#redbull + .content-section {
+  background-color: #1E3A8A; 
+}
+
+
+#mercedes + .content-section {
+  background-color: #B0B0B0; 
+}
+
+
+#ferrari + .content-section {
+  background-color: #FF0000; 
+}
+
+
+#mclaren + .content-section {
+  background-color: #FF6F00; 
+}
+
+.final-section {
+  background-color: #29373f;
   color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.links-section {
+  background-color: #A72224;
+  color: white;
+  padding: 3rem 2rem;
+  text-align: center;
+}
+
+.links-section h2 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.links-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.links-section ul li {
+  margin: 1rem 0;
+}
+
+.links-section ul li a {
+  font-size: 2rem;
+  color: white;
+  text-decoration: none;
+  background-color: #29373f;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+
+.links-section ul li a:hover {
+  background-color: #4b5258;
+}
+
+footer {
+  background-color: #29373f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
 }
