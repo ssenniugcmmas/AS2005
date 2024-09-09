@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css?family=Bebas+Neue");
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: "Bebas Neue";
+  overflow-x: hidden;
+}
+
+.wrapper {
+  perspective: 1px;
+  height: 100vh;
+  overflow-y: auto;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #29373f;
+  color: white;
+  z-index: 1000;
+  padding: 1rem 0;
+  text-align: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.nav-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li {
+  display: inline-block;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.5rem;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+}
+
+.nav-links a:hover {
+  background-color: #4b5258;
+  border-radius: 5px;
+}
+
+
+.parallax-section {
+  position: relative;
+  height: 100vh;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+}
+
+
+#intro {
+  background-image: url('imgs/mid_field.webp'); 
+}
+
+
+#aston-martin {
+  background-image: url('imgs/aston_martin.jpg'); 
+}
+
+
+#visa-cash-app {
+  background-image: url('imgs/vcarb.avif');
+}
+
+
+#haas {
+  background-image: url('imgs/haas.jpg'); 
+}
+
+.foreground {
+  position: relative;
+  text-align: center;
+  color: white;
+  padding-top: 20%;
+  z-index: 1;
+}
+
+.title {
+  font-size: 7rem;
+  color: white;
+  text-shadow: 0 0 5px black;
+}
+
+/* Content Sections */
+.content-section {
+  padding: 2rem;
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.intro-content {
+  background-color: #1a1a1a; 
+}
+
+.aston-content {
+  background-color: #006f62; 
+}
+
+.visa-content {
+  background-color: #0008ff; 
+}
+
+.haas-content {
+  background-color: #b6b6b6;
+}
+
+footer {
+  background-color: #29373f;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+
+body {
+  padding-top: 70px; 
+}
