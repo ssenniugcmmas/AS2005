@@ -104,7 +104,6 @@ html, body {
   text-shadow: 0 0 5px black;
 }
 
-/* Content Sections */
 .content-section {
   padding: 2rem;
   color: white;
@@ -138,4 +137,11 @@ footer {
 
 body {
   padding-top: 70px; 
+}
+
+h2 {
+  text-align: center;
+  font-size: 30px;
+  color:#29373f;
+  font-family: "Bebas Neue";
 }
