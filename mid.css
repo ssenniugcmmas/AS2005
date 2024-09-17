@@ -68,26 +68,31 @@ html, body {
   background-size: cover;
   background-position: center;
   margin: 0;
+  border-radius: 20px;
 }
 
 
 #intro {
   background-image: url('imgs/mid_field.webp'); 
+  border-radius: 20px;
 }
 
 
 #aston-martin {
   background-image: url('imgs/aston_martin.jpg'); 
+  border-radius: 20px;
 }
 
 
 #visa-cash-app {
   background-image: url('imgs/vcarb.avif');
+  border-radius: 20px;
 }
 
 
 #haas {
   background-image: url('imgs/haas.jpg'); 
+  border-radius: 20px;
 }
 
 .foreground {
@@ -109,22 +114,28 @@ html, body {
   color: white;
   font-size: 2rem;
   text-align: center;
+  border-radius: 20px;
 }
 
 .intro-content {
-  background-color: #1a1a1a; 
+  background-color: #1a1a1a;
+  border-radius: 20px; 
 }
 
 .aston-content {
   background-color: #006f62; 
+  border-radius: 20px; 
+  
 }
 
 .visa-content {
   background-color: #0008ff; 
+  border-radius: 20px; 
 }
 
 .haas-content {
   background-color: #b6b6b6;
+  border-radius: 20px; 
 }
 
 footer {
@@ -132,6 +143,7 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+  border-radius: 20px; 
 }
 
 

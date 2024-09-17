@@ -72,31 +72,43 @@ html, body {
   background-size: cover;
   background-position: center;
   margin: 0;
+  border-radius: 20px;
+
 }
 
 
 #intro {
   background-image: url('imgs/Champion.jpg'); 
+  border-radius: 20px;
+
 }
 
 
 #redbull {
   background-image: url('imgs/Redbull.jpg'); 
+  border-radius: 20px;
+
 }
 
 
 #mercedes {
   background-image: url('imgs/Mercedes.jpg'); 
+  border-radius: 20px;
+
 }
 
 
 #ferrari {
   background-image: url('imgs/Ferrari.jpg'); 
+  border-radius: 20px;
+
 }
 
 
 #mclaren {
   background-image: url('imgs/Mclaren.jpg'); 
+  border-radius: 20px;
+
 }
 
 .foreground {
@@ -120,26 +132,35 @@ html, body {
   color: white;
   font-size: 2rem;
   text-align: center;
+  border-radius: 20px;
+
 }
 
 
 #redbull + .content-section {
   background-color: #1E3A8A; 
+  border-radius: 20px;
+
 }
 
 
 #mercedes + .content-section {
   background-color: #B0B0B0; 
+  border-radius: 20px;
+
 }
 
 
 #ferrari + .content-section {
   background-color: #FF0000; 
+  border-radius: 20px;
 }
 
 
 #mclaren + .content-section {
   background-color: #FF6F00; 
+  border-radius: 20px;
+
 }
 
 .final-section {
@@ -147,6 +168,7 @@ html, body {
   color: white;
   padding: 4rem 2rem;
   text-align: center;
+  border-radius: 20px;
 }
 
 .links-section {
@@ -168,6 +190,7 @@ html, body {
 
 .links-section ul li {
   margin: 1rem 0;
+
 }
 
 .links-section ul li a {
@@ -181,6 +204,7 @@ html, body {
 
 .links-section ul li a:hover {
   background-color: #4b5258;
+  border-radius: 20px;
 }
 
 footer {
@@ -188,4 +212,5 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+  border-radius: 20px;
 }

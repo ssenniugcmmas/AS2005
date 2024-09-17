@@ -23,14 +23,17 @@ html, body {
   background-size: cover;
   background-position: center;
   margin: 0;
+  border-radius: 20px;
 }
 
 #section1 {
   background-image: url('imgs/F1logo.jpg');
+  border-radius: 20px;
 }
 
 #section2 {
   background-image: url('imgs/1578641118.avif');
+  border-radius: 20px;
 }
 
 .foreground {
@@ -54,6 +57,7 @@ html, body {
   font-size: 2rem;
   position: relative;
   z-index: 2;
+  border-radius: 20px;
 }
 
 .links-list {
@@ -87,6 +91,7 @@ html, body {
   color: white;
   padding: 4rem 2rem;
   text-align: center;
+  border-radius: 20px;
 }
 
 footer {
@@ -94,4 +99,5 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+  border-radius: 20px;
 }
